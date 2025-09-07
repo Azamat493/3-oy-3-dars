@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-text-black: #000;
+  --color-text-white: #fff;
+  --color-background-dark: #e2e9f6;
+  --color-background-light: #f4f7fb;
+  --color-main-default: #4a8cc9;
+  --color-main-hover: #2f73b1;
+  --color-main-pressed: #1e51c0;
+  --color-main-disabled: #a1a1a1;
+  --color-second-pressed: #387754;
+  --color-second-alert: #dc5454;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1920px;
+    margin: 0 auto;
+}

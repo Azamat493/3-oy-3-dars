@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urelocation</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <header
+      class="site-header bg-[url('/images/OBJECTS.svg')] bg-cover bg-center pt-[40px] w-full max-w-[1711px] h-[941px]"
+    >
+      <div class="container header-inner flex items-center justify-between">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.svg" alt="" />
+        </a>
+           <input type="checkbox" id="menu-toggle" class="menu-toggle hidden" />
+    <label for="menu-toggle" class="burger md:hidden">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+        <nav class="nav flex items-center gap-[30px]">
+          <a
+            href="#"
+            class="font-normal text-base text-[#5eb083] font-poppins transition-colors duration-200 hover:text-[#4a906a]"
+          >
+            Home
+          </a>
+
+          <details class="group w-auto">
+            <summary
+              class="flex items-center cursor-pointer list-none font-normal text-base text-[#32333d] font-poppins transition-colors duration-200 hover:text-[#5eb083]"
+            >
+              <span>Services</span>
+              <svg
+                class="ml-2 transition-transform duration-300 group-open:rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 9 6"
+                width="12"
+                height="8"
+                fill="none"
+              >
+                <path
+                  d="M1 1.5L4.5 4.5L8 1.5"
+                  stroke="#2a3034"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </summary>
+
+            <ul class="mt-2 ml-4 list-disc text-gray-700">
+              <li
+                class="font-normal text-base text-[#32333d] font-poppins cursor-pointer transition-colors duration-200 hover:text-[#5eb083]"
+              >
+                Global Talent Vise
+
+
+              </li>
+              <li
+                class="font-normal text-base text-[#32333d] font-poppins cursor-pointer transition-colors duration-200 hover:text-[#5eb083]"
+              >
+                Post-relocation
+              </li>
+              <li
+                class="font-normal text-base text-[#32333d] font-poppins cursor-pointer transition-colors duration-200 hover:text-[#5eb083]"
+              >
+                Settlement in the UK
+              </li>
+            </ul>
+          </details>
+
+          <a
+            href="#"
+            class="font-normal text-base text-[#32333d] font-poppins transition-colors duration-200 hover:text-[#5eb083]"
+          >
+            Blog
+          </a>
+
+          <a
+            href="#"
+            class="font-normal text-base text-[#32333d] font-poppins transition-colors duration-200 hover:text-[#5eb083]"
+          >
+            Contact
+          </a>
+        </nav>
+
+        <div class="">
+          <button
+            class="flex cursor-pointer items-center justify-center gap-2 w-[230px] h-[60px] px-6 rounded-[60px] bg-[#5eb083] transition-all duration-300 ease-in-out hover:bg-[#4a906a] hover:shadow-lg hover:-translate-y-0.5"
+          >
+            <svg
+              class="w-[18px] h-[18px] shrink-0"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.26057 0.0112695C7.33076 0.11849 6.58422 0.282826 5.91896 0.526705C3.10262 1.55916 0.977109 3.9157 0.257126 6.80398C0.0500084 7.63481 0.00476074 8.02936 0.00476074 9.00474C0.00476074 9.98011 0.0500084 10.3747 0.257126 11.2055C1.05746 14.4161 3.58865 16.9473 6.79926 17.7476C7.63009 17.9548 8.02465 18 9.00002 18C9.9754 18 10.37 17.9548 11.2008 17.7476C14.4114 16.9473 16.9426 14.4161 17.7429 11.2055C17.95 10.3747 17.9953 9.98011 17.9953 9.00474C17.9953 8.02936 17.95 7.63481 17.7429 6.80398C17.0228 3.91492 14.9013 1.56286 12.0811 0.526811C11.6243 0.35899 10.8221 0.155991 10.3029 0.0768345C9.95174 0.0232768 8.54723 -0.0217948 8.26057 0.0112695ZM9.65145 1.43493C10.4764 1.51504 11.1914 1.69149 11.9353 1.99847C13.723 2.73616 15.2686 4.2818 16.0063 6.06942C16.7944 7.97932 16.7944 10.0302 16.0063 11.9401C15.2686 13.7277 13.723 15.2733 11.9353 16.011C10.0254 16.7992 7.97461 16.7992 6.0647 16.011C4.27709 15.2733 2.73145 13.7277 1.99375 11.9401C1.2056 10.0302 1.2056 7.97932 1.99375 6.06942C2.73145 4.2818 4.27709 2.73616 6.0647 1.99847C7.22431 1.51993 8.48589 1.32173 9.65145 1.43493ZM12.2043 5.99677C12.1255 6.03051 11.3041 6.82602 9.92473 8.20447L7.76841 10.3594L6.86127 9.45517C5.91868 8.51553 5.781 8.40856 5.51212 8.4069C5.32549 8.40574 5.03267 8.5661 4.92541 8.72822C4.8171 8.89188 4.78333 9.15037 4.84495 9.34394C4.87904 9.45109 5.14806 9.74155 6.10787 10.7075C6.91318 11.518 7.3753 11.9573 7.46829 12.0008C7.65161 12.0865 7.88552 12.0857 8.06458 11.9986C8.26835 11.8995 13.0617 7.09898 13.136 6.91954C13.2435 6.66017 13.1719 6.30939 12.9744 6.12783C12.7795 5.94871 12.4484 5.89233 12.2043 5.99677Z"
+                fill="white"
+              />
+            </svg>
+            <span
+              class="font-normal text-base text-white font-poppins leading-none align-middle"
+            >
+              Take a scoring test
+            </span>
+          </button>
+        </div>
+        
+      </div>
+      <section class="hero p-[40px] mt-[40px]">
+        <div class="container hero-grid">
+          <div class="hero-copy ml-[20px] mt-[20px]">
+            <h1
+              class="font-normal text-[70px] leading-[90px] text-[#32333d] font-poppins mb-[20px]"
+            >
+              One platform <br />
+              meeting
+              <span class="accent text-[#5eb083]"
+                >all your <br />
+                relocation</span
+              >
+              needs
+            </h1>
+            <p
+              class="mb-[30px] font-normal text-2xl leading-[158%] text-[#5b6574] font-poppins"
+            >
+              Get a Global Talent Visa and relocate to the UK. <br />
+              Start your journey now
+            </p>
+            <div class="flex items-center gap-[30px]">
+              <button
+                class="flex cursor-pointer items-center justify-center gap-2 w-[230px] h-[60px] px-6 rounded-[60px] bg-[#ffbb8a] transition-all duration-300 ease-in-out hover:bg-[#e6a978] hover:shadow-lg hover:-translate-y-0.5"
+              >
+                <svg
+                  class="w-[18px] h-[18px] shrink-0"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.26057 0.0112695C7.33076 0.11849 6.58422 0.282826 5.91896 0.526705C3.10262 1.55916 0.977109 3.9157 0.257126 6.80398C0.0500084 7.63481 0.00476074 8.02936 0.00476074 9.00474C0.00476074 9.98011 0.0500084 10.3747 0.257126 11.2055C1.05746 14.4161 3.58865 16.9473 6.79926 17.7476C7.63009 17.9548 8.02465 18 9.00002 18C9.9754 18 10.37 17.9548 11.2008 17.7476C14.4114 16.9473 16.9426 14.4161 17.7429 11.2055C17.95 10.3747 17.9953 9.98011 17.9953 9.00474C17.9953 8.02936 17.95 7.63481 17.7429 6.80398C17.0228 3.91492 14.9013 1.56286 12.0811 0.526811C11.6243 0.35899 10.8221 0.155991 10.3029 0.0768345C9.95174 0.0232768 8.54723 -0.0217948 8.26057 0.0112695ZM9.65145 1.43493C10.4764 1.51504 11.1914 1.69149 11.9353 1.99847C13.723 2.73616 15.2686 4.2818 16.0063 6.06942C16.7944 7.97932 16.7944 10.0302 16.0063 11.9401C15.2686 13.7277 13.723 15.2733 11.9353 16.011C10.0254 16.7992 7.97461 16.7992 6.0647 16.011C4.27709 15.2733 2.73145 13.7277 1.99375 11.9401C1.2056 10.0302 1.2056 7.97932 1.99375 6.06942C2.73145 4.2818 4.27709 2.73616 6.0647 1.99847C7.22431 1.51993 8.48589 1.32173 9.65145 1.43493ZM12.2043 5.99677C12.1255 6.03051 11.3041 6.82602 9.92473 8.20447L7.76841 10.3594L6.86127 9.45517C5.91868 8.51553 5.781 8.40856 5.51212 8.4069C5.32549 8.40574 5.03267 8.5661 4.92541 8.72822C4.8171 8.89188 4.78333 9.15037 4.84495 9.34394C4.87904 9.45109 5.14806 9.74155 6.10787 10.7075C6.91318 11.518 7.3753 11.9573 7.46829 12.0008C7.65161 12.0865 7.88552 12.0857 8.06458 11.9986C8.26835 11.8995 13.0617 7.09898 13.136 6.91954C13.2435 6.66017 13.1719 6.30939 12.9744 6.12783C12.7795 5.94871 12.4484 5.89233 12.2043 5.99677Z"
+                    fill="white"
+                  />
+                </svg>
+                <span
+                  class="font-normal text-base text-white font-poppins leading-none align-middle"
+                >
+                  Take a scoring test
+                </span>
+              </button>
+              <p
+                class="font-normal text-base leading-[162%] text-[#1f2020] font-poppins"
+              >
+                Evaluate your chances and get detailed <br />
+                feedback from our team
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      </header>
+      <main>
+       <section class="trusted">
+          <div class="container logos flex">
+            <a
+              href="https://www.hsbc.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./images/Rectangle 1.svg" alt=""
+            /></a>
+            <a
+              href="https://www.vodafone.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./images/Rectangle 2.svg" alt=""
+            /></a>
+            <a
+              href="https://www.revolut.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./images/Rectangle 3.svg" alt=""
+            /></a>
+            <a
+              href="https://www.oracle.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./images/Rectangle 4.svg" alt=""
+            /></a>
+            <a
+              href="https://www.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./images/Rectangle 5.svg" alt=""
+            /></a>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./images/Rectangle 6.svg" alt=""
+            /></a>
+            <a
+              href="https://www.jpmorganchase.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./images/Rectangle 7.svg" alt=""
+            /></a>
+            <a
+              href="https://www.cisco.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./images/Rectangle 8.svg" alt=""
+            /></a>
+            <a
+              href="https://www.microsoft.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./images/Rectangle 9.svg" alt=""
+            /></a>
+          </div>
+        </section>
+      </main>
+    </header>
+  </body>
+</html>
